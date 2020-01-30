@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-logo {
+            height: 60px;
+        }
+
+        .logo {
+            width: 250px;
+        }
+
+        .flex-nav {
+            display: flex;
+            height: 50px;
+            justify-content: flex-start;
+            color: white;
+            background-color: #1e447a;
+            align-items: center;
+        }
+
+        .flex-nav>div {
+            border-right: 1px solid #112747;
+            padding: 15px;
+        }
+
+        .flex-content {
+            display: flex;
+            flex-basis: 200px;
+        }
+
+        .flex-content-left {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+            justify-content: left;
+            margin-right: 10px;
+        }
+
+        .flex-content-left-div {
+            border-bottom: 1px solid #c6c6c6;
+            display: flex;
+        }
+
+        .flex-content-right {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            background-color: #e8e7e7;
+            width: 100%;
+        }
+
+        .flex-content-right>div {
+            display: flex;
+            flex: 1;
+        }
+
+        .square {
+            display: block;
+            width: 150px;
+            height: 150px;
+            background: #dddddd;
+            margin-left: 20px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: 20px;
+        }
+
+        .square-heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            margin-top: 5px;
+            color: #1f1f1f;
+            margin-bottom: 10px;
+
+        }
+
+        .square-heading>div {
+            width: 100%;
+
+        }
+
+        .read-more {
+            color: #e3792c;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            padding-left: 15px;
+            margin-bottom: 10px;
+            background-color: #dbdbdb;
+            padding-bottom: 20px;
+        }
+
+        .sidebar-link1 {
+            border-bottom: 1px solid #c6c6c6;
+            margin-right: 10px;
+        }
+
+        .sidebar-link2 {
+            margin-right: 10px;
+        }
+
+        .sidebar-link>div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        .widgets {
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+            background-color: #dbdbdb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-logo">
+            <div class="logo"><img src="logo.png" height=100%></div>
+        </div>
+        <div class="flex-nav">
+            <div>Link1</div>
+            <div>Link2</div>
+            <div>Link3</div>
+            <div>Link4</div>
+            <div>Link5</div>
+        </div>
+        <div class="flex-content">
+            <div class="flex-content-left">
+                <div class="flex-content-left-div">
+                    <div class="square">
+                    </div>
+                    <div class="square-heading">
+                        <div>
+                            <h3>This is a Loren Ipsum Heading</h3>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum is a pseudo-Latin text used in web design,
+                                and printing in place of English to
+                                emphasise design elements over content.</p>
+                        </div>
+                        <div class="read-more">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-content-left-div">
+                    <div class="square">
+
+                    </div>
+                    <div class="square-heading">
+                        <div>
+                            <h3>This is a Loren Ipsum Heading</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum is a pseudo-Latin text used in web design,
+                                and printing in place of English to
+                                emphasise design elements over content.
+                            </p>
+                        </div>
+                        <div class="read-more">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-content-left-div">
+                    <div class="square">
+
+                    </div>
+                    <div class="square-heading">
+                        <div>
+                            <h3>This is a Loren Ipsum Heading</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum is a pseudo-Latin text used in web design,
+                                and printing in place of English to
+                                emphasise design elements over content.
+                            </p>
+                        </div>
+                        <div class="read-more">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="flex-content-right">
+                <div class="sidebar">
+                    <div class="sidebar-link1">
+                        <h3>Sidebar Links</h3>
+                    </div>
+                    <div class="sidebar-link">
+                        <div>Link1</div>
+                        <div>Link2</div>
+                        <div>Link3</div>
+                        <div>Link4</div>
+                    </div>
+                </div>
+                <div class="widgets">
+                    <div class="sidebar-link1">
+                        <h3>Other Widgets</h3>
+                    </div>
+                    <div class="sidebar-link2">
+                        <p>
+                            Lorem ipsum is a pseudo-Latin text used in web design,
+                            and printing in place of English to
+                            emphasise design elements over content.
+                        </p>
+                        <p>
+                            printing in place of English to
+                            emphasise.
+                        </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
